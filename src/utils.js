@@ -13,12 +13,12 @@ exports.prepareWrite = dest => {
 }
 
 exports.writeFile = (dest, content) => {
-  exports.prepareWrite(dest)
+  exports.prepareWrite(exports.here(dest))
   fs.writeFileSync(exports.here(dest), content)
 }
 
 exports.writeClientFile = (dest, content) => {
-  exports.prepareWrite(dest)
+  exports.prepareWrite(exports.there(dest))
   fs.writeFileSync(exports.there(dest), content)
 }
 

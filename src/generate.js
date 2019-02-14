@@ -16,6 +16,8 @@ exports.generate = async props => {
       .trim()
 
     writeFile(`../manifests/${name}`, manifest)
+    writeFile(`../dist/${name}/${dest}`, content)
+
     console.log(`Generated ${name}`)
   } catch (err) {
     console.log(err)
