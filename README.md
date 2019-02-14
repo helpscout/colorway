@@ -1,3 +1,9 @@
+# 🎨 Colorway
+
+> A color management syncing system
+
+## Table of Contents
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -8,10 +14,6 @@
     - [`generate({ name, dest, content})`](#generate-name-dest-content)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# 🎨 Colorway
-
-> A color management syncing system
 
 ## Installation
 
