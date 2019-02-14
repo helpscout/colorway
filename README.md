@@ -7,11 +7,10 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [🎨 Colorway](#-colorway)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Templates](#templates)
-    - [`generate({ name, dest, content})`](#generate-name-dest-content)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Templates](#templates)
+  - [`generate({ name, dest, content})`](#generate-name-dest-content)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
