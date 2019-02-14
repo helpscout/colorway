@@ -1,5 +1,5 @@
 {
-  "colorway": "v0.0.8",
+  "colorway": "v0.0.9",
   "name": "seed-color-scheme",
   "dest": "packages/seed-color-scheme/scss/pack/seed-color-scheme/_config.scss"
 }

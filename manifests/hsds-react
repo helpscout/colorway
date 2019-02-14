@@ -1,5 +1,5 @@
 {
-  "colorway": "v0.0.8",
+  "colorway": "v0.0.9",
   "name": "hsds-react",
   "dest": "src/styles/configs/colorway.ts"
 }

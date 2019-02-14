@@ -1,5 +1,5 @@
 {
-  "colorway": "v0.0.8",
+  "colorway": "v0.0.9",
   "name": "hs-app",
   "dest": "site/scss/config/_seed-color-scheme-helpscout.scss"
 }

@@ -1,5 +1,5 @@
 {
-  "colorway": "v0.0.8",
+  "colorway": "v0.0.9",
   "name": "beacon2",
   "dest": "src/scss/patches/_colorway.scss"
 }
