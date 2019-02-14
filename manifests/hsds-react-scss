@@ -1,12 +1,11 @@
 {
-  "colorway": "(v0.0.1)",
+  "colorway": "(v0.0.2)",
   "name": "hsds-react-scss",
   "dest": "src/styles/configs/_colorway.scss"
 }
 ==COLORWAY-MANIFEST==================
 @import 'pack/seed-color-scheme/_index';
 
-// Text
 @include _color((
   blue:
     (

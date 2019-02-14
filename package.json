@@ -20,23 +20,21 @@
   },
   "files": [
     "src",
+    "data",
+    "manifests",
     "README.md",
     "LICENSE"
   ],
   "license": "MIT",
   "devDependencies": {
     "@helpscout/zero": "2.0.4",
-    "fast-glob": "^2.2.6",
-    "lodash.template": "^4.4.0"
+    "fast-glob": "^2.2.6"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "is-online": "^8.0.0",
     "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1",
-    "needle": "^2.2.4"
+    "mkdirp": "^0.5.1"
   }
 }

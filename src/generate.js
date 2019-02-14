@@ -15,7 +15,7 @@ exports.generate = async props => {
       .join('')
       .trim()
 
-    writeFile(`../modules/${name}`, manifest)
+    writeFile(`../manifests/${name}`, manifest)
     console.log(`Generated ${name}`)
   } catch (err) {
     console.log(err)
@@ -26,7 +26,6 @@ exports.generate = async props => {
 exports.generateTemplates = async () => {
   console.log('')
   console.log('Generating templates...')
-  console.log('')
   const files = await glob(here('./templates/**/*'))
   await files.forEach(require)
   console.log('')

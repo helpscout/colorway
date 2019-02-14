@@ -1,28 +1,17 @@
-const axios = require('axios')
 const {
   manifestSepToken,
+  readFile,
   writeClientFile,
   prettyLog,
+  here,
   there,
 } = require('./utils')
-const isOnline = require('is-online')
 
-const BASE_URL =
-  'https://raw.githubusercontent.com/helpscout/colorway/master/modules/'
-
-const getModuleUrl = url => (url ? `${BASE_URL}${url}` : null)
-
-exports.get = async url => {
-  if (!url) return
-
+exports.get = async mod => {
   try {
-    const fetchUrl = getModuleUrl(url)
-    const results = await axios.get(fetchUrl)
-
-    return results.data
+    return readFile(here(`../manifests/${mod}`))
   } catch (err) {
-    console.log(err)
-    process.exit(1)
+    throw err
   }
 }
 
@@ -40,12 +29,6 @@ exports.compile = async mod => {
   prettyLog('Syncing colorway...')
 
   try {
-    const online = await isOnline()
-    if (!online) {
-      console.log("Hmm! Looks like you're offline. Skipping colorway sync.")
-      process.exit(0)
-    }
-
     const manifest = await exports.get(mod)
     if (!manifest) {
       console.log(

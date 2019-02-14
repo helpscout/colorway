@@ -22,10 +22,10 @@ npm install --save-dev @helpscout/colorway
 
 ## Usage
 
-Run the `colorway` command with the module you wish to sync, example:
+Run the `colorway` command with the manifest you wish to sync, example:
 
 ```
-colorway --module=hsds-react
+colorway --manifest=hsds-react
 ```
 
 For a more automated/magical feed, we recommend you add this as a `prestart` or `prebuild` command in your `package.json`:
@@ -33,7 +33,7 @@ For a more automated/magical feed, we recommend you add this as a `prestart` or 
 ```
 {
   ...
-  "colorway": "colorway --module=hsds-react",
+  "colorway": "colorway --manifest=hsds-react",
   "prestart": "colorway",
   ...
 }
