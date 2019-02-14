@@ -6,7 +6,7 @@ exports.generate = async props => {
   try {
     const { name, dest, content } = props
     const meta = {
-      colorway: `(v${pkg.version})`,
+      colorway: `v${pkg.version}`,
       name,
       dest,
     }
