@@ -1,11 +1,29 @@
 const fs = require('fs')
 const path = require('path')
+const mkdirp = require('mkdirp')
 
 exports.here = dest => path.resolve(__dirname, dest)
+exports.there = dest => path.resolve(process.cwd(), dest)
 
 exports.readFile = dest => fs.readFileSync(exports.here(dest), 'utf8')
 
-exports.writeFile = (dest, content) =>
+exports.prepareWrite = dest => {
+  const dir = path.dirname(dest)
+  mkdirp.sync(dir)
+}
+
+exports.writeFile = (dest, content) => {
+  exports.prepareWrite(dest)
   fs.writeFileSync(exports.here(dest), content)
+}
+
+exports.writeClientFile = (dest, content) => {
+  exports.prepareWrite(dest)
+  fs.writeFileSync(exports.there(dest), content)
+}
 
 exports.manifestSepToken = '\n==COLORWAY-MANIFEST==================\n'
+
+exports.prettyLog = (...args) => {
+  console.log('🎨', '', ...args)
+}
