@@ -1,5 +1,5 @@
 {
-  "colorway": "v0.0.7",
+  "colorway": "v0.0.8",
   "name": "search-autocomplete",
   "dest": "src/styles/configs/_seed-color-scheme.scss"
 }

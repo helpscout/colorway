@@ -1,5 +1,5 @@
 {
-  "colorway": "v0.0.7",
+  "colorway": "v0.0.8",
   "name": "doc-article-styles",
   "dest": "src/scss/configs/_colorway.scss"
 }
