@@ -1,7 +1,7 @@
 {
   "name": "@helpscout/colorway",
   "version": "0.0.2",
-  "description": "Module generated with Zero",
+  "description": "A color management syncing system",
   "main": "src/index.js",
   "bin": {
     "colorway": "src/index.js"
