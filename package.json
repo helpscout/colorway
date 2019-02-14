@@ -1,0 +1,39 @@
+{
+  "name": "@helpscout/colorway",
+  "version": "0.0.0",
+  "description": "Module generated with Zero",
+  "main": "src/index.js",
+  "bin": {
+    "colorway": "src/index.js"
+  },
+  "private": false,
+  "scripts": {
+    "prestart": "zero prestart",
+    "build": "zero build",
+    "lint": "zero lint",
+    "test": "zero test",
+    "format": "zero format",
+    "validate": "zero validate",
+    "release": "zero release",
+    "version": "zero build",
+    "precommit": "zero pre-commit"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@helpscout/zero": "2.0.1",
+    "fast-glob": "^2.2.6",
+    "lodash.template": "^4.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "needle": "^2.2.4"
+  }
+}
