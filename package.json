@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "prestart": "zero prestart",
-    "build": "zero build",
+    "build": "node src/generate.js",
     "lint": "zero lint",
     "test": "zero test",
     "format": "zero format",
