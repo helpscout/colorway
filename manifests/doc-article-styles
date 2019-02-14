@@ -4,6 +4,11 @@
   "dest": "src/scss/configs/_colorway.scss"
 }
 ==COLORWAY-MANIFEST==================
+// This file was automatically generated with @helpscout/colorway
+// Please don't modify this file. Your changes will be overwritten.
+// Instead, update the template at:
+// https://github.com/helpscout/colorway
+
 @import 'pack/seed-color-scheme/_index';
 
 @include _color((

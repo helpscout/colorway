@@ -1,8 +1,10 @@
 const config = require('../../configs').getColors()
-
+const { warning } = require('./warning')
 const { latest } = config
 
 const content = `
+${warning}
+
 @import 'pack/seed-color-scheme/_index';
 
 @include _color((

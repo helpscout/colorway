@@ -1,5 +1,6 @@
 const { generate } = require('../generate')
 const config = require('../configs').getColors()
+const { warning } = require('./shared/warning')
 const { latest } = config
 
 const generateColorScheme = () => {
@@ -18,6 +19,8 @@ const generateColorScheme = () => {
 }
 
 const content = `
+${warning}
+
 $seed-color-scheme-helpscout: (
   // Base
   white: #fff,
@@ -39,6 +42,7 @@ $seed-color-scheme-helpscout: (
 
 generate({
   name: 'seed-color-scheme-helpscout',
-  dest: 'packages/seed-color-scheme-helpscout/scss/pack/seed-color-scheme-helpscout/_config.scss',
+  dest:
+    'packages/seed-color-scheme-helpscout/scss/pack/seed-color-scheme-helpscout/_config.scss',
   content,
 })

@@ -1,5 +1,6 @@
 const { generate } = require('../generate')
 const config = require('../configs').getColors()
+const { warning } = require('./shared/warning')
 
 const colorConfig = {
   ...config.previous,
@@ -7,6 +8,8 @@ const colorConfig = {
 }
 
 const content = `
+${warning}
+
 const palette = ${JSON.stringify(colorConfig, null, 2)}
 
 export default palette

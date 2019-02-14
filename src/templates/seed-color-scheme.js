@@ -1,5 +1,6 @@
 const { generate } = require('../generate')
 const config = require('../configs').getColors()
+const { warning } = require('./shared/warning')
 const { latest } = config
 
 const generateColorScheme = () => {
@@ -18,6 +19,8 @@ const generateColorScheme = () => {
 }
 
 const content = `
+${warning}
+
 // Dependencies
 @import "./functions/color";
 @import "./mixins/color";
