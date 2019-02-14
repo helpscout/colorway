@@ -40,7 +40,6 @@ exports.compile = async mod => {
     const { meta, content } = exports.parseManifest(manifest)
     const dest = there(meta.dest)
 
-    console.log('')
     writeClientFile(there(meta.dest), content)
     console.log(`Generated ${dest}`)
     console.log('')
