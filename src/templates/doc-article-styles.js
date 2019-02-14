@@ -1,5 +1,5 @@
 const { generate } = require('../generate')
-const { content } = require('./shared/seed-color-scheme')
+const { content } = require('./shared/seed-color-scheme-with-links')
 
 generate({
   name: 'doc-article-styles',

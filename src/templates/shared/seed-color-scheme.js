@@ -23,4 +23,3 @@ const content = `
 `.trim()
 
 exports.content = content
-exports.default = content

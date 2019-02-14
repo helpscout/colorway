@@ -10,10 +10,10 @@ const content = `
 const palette = ${JSON.stringify(colorConfig, null, 2)}
 
 export default palette
-`
+`.trim()
 
 generate({
   name: 'hsds-react',
   dest: 'src/styles/configs/colorway.ts',
-  content: content.trim(),
+  content,
 })

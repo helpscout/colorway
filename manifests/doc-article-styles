@@ -1,5 +1,5 @@
 {
-  "colorway": "(v0.0.2)",
+  "colorway": "(v0.0.3)",
   "name": "doc-article-styles",
   "dest": "src/scss/configs/_colorway.scss"
 }
@@ -20,4 +20,14 @@
       800: #034077,
       900: #002651,
     ),
+));
+
+@include _color((
+  link: (
+    default: _color(blue, 600),
+    base: _color(blue, 600),
+    hover: _color(blue, 500),
+    active: _color(blue, 500),
+    focus: _color(blue, 500),
+  )
 ));
