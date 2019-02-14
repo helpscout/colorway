@@ -62,7 +62,7 @@ exports.compile = async mod => {
     console.log(`Generated ${dest}`)
     console.log('')
   } catch (err) {
-    console.log(err)
-    process.exit(1)
+    console.log("Hmm! We couldn't generate the file.")
+    process.exit(0)
   }
 }
