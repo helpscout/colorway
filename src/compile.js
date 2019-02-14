@@ -37,9 +37,6 @@ exports.parseManifest = manifest => {
 
 exports.compile = async mod => {
   if (!mod) return
-
-  console.log(argv)
-  process.exit(0)
   prettyLog('Syncing colorway...')
 
   try {
