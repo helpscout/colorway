@@ -11,6 +11,7 @@
 - [Usage](#usage)
 - [Templates](#templates)
   - [`generate({ name, dest, content})`](#generate-name-dest-content)
+- [Integrations](#integrations)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -74,3 +75,16 @@ generate({
 | name    | `string` | The name of your module.                                    |
 | dest    | `string` | The destination the file will be generated in your project. |
 | content | `string` | The final contents of the file.                             |
+
+## Integrations
+
+| Application / Project                                                 | Status     |
+| --------------------------------------------------------------------- | ---------- |
+| [doc-article-styles](https://github.com/helpscout/doc-article-styles) | Integrated |
+| [hsds-react](https://github.com/helpscout/hsds-react)                 | Integrated |
+| search-autocomplete                                                   | Integrated |
+| [seed](https://github.com/helpscout/seed)                             | Integrated |
+| hs-app                                                                | Pending    |
+| beacon2                                                               | Pending    |
+| developer                                                             | --         |
+| styleguide                                                            | --         |
