@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { compile } = require('./compile')
 const argv = require('minimist')(process.argv.slice(2))
 const pkg = require('../package.json')
