@@ -1,5 +1,8 @@
 # 🎨 Colorway
 
+[![Build Status](https://travis-ci.org/helpscout/colorway.svg?branch=master)](https://travis-ci.org/helpscout/colorway)
+[![npm version](https://badge.fury.io/js/%40helpscout%2Fcolorway.svg)](https://badge.fury.io/js/%40helpscout%2Fcolorway)
+
 > A color management syncing system
 
 ## Table of Contents
