@@ -12,6 +12,7 @@
 - [Templates](#templates)
   - [`generate({ name, dest, content})`](#generate-name-dest-content)
 - [Integrations](#integrations)
+- [See Also](#see-also)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -88,3 +89,7 @@ generate({
 | beacon2                                                               | Pending    |
 | developer                                                             | --         |
 | styleguide                                                            | --         |
+
+## See Also
+
+- [colorway-sketch](https://github.com/helpscout/colorway-sketch)
