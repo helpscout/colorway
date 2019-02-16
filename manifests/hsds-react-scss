@@ -11,7 +11,7 @@
 // Instead, update the template at:
 // https://github.com/helpscout/colorway
 
-@import "pack/seed-color-scheme/_index";
+@import 'pack/seed-color-scheme/_index';
 
 @include _color(
   (
@@ -25,7 +25,7 @@
       600: #0077cc,
       700: #005ca4,
       800: #034077,
-      900: #002651
-    )
+      900: #002651,
+    ),
   )
 );

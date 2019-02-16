@@ -25,7 +25,12 @@ const formatContent = (dest, content) => {
 
   if (!parser) return content
 
-  return prettier.format(content, { parser })
+  return prettier.format(content, {
+    singleQuote: true,
+    trailingComma: 'es5',
+    semi: false,
+    parser,
+  })
 }
 
 exports.generate = async props => {
