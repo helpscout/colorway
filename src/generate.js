@@ -1,6 +1,32 @@
+const prettier = require('prettier')
+const path = require('path')
 const { here, writeFile, manifestSepToken } = require('./utils')
 const pkg = require('../package.json')
 const glob = require('fast-glob')
+
+const parsers = {
+  css: 'css',
+  graphql: 'graphql',
+  html: 'html',
+  js: 'babel',
+  json: 'json',
+  markdown: 'markdown',
+  md: 'markdown',
+  mdx: 'mdx',
+  scss: 'scss',
+  ts: 'typescript',
+  yaml: 'yaml',
+  yml: 'yaml',
+}
+
+const formatContent = (dest, content) => {
+  const ext = path.extname(dest).replace('.', '')
+  let parser = parsers[ext]
+
+  if (!parser) return content
+
+  return prettier.format(content, { parser })
+}
 
 exports.generate = async props => {
   try {
@@ -11,7 +37,11 @@ exports.generate = async props => {
       dest,
     }
 
-    const manifest = [JSON.stringify(meta, null, 2), manifestSepToken, content]
+    const manifest = [
+      JSON.stringify(meta, null, 2),
+      manifestSepToken,
+      formatContent(dest, content),
+    ]
       .join('')
       .trim()
 

@@ -22,7 +22,6 @@ const content = `
 ${warning}
 
 $seed-color-scheme-helpscout: (
-  // Base
   white: #fff,
   black: #000,
 
