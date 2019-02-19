@@ -89,7 +89,7 @@ generate({
 | search-autocomplete                                                   | Integrated |
 | [seed](https://github.com/helpscout/seed)                             | Integrated |
 | hs-app                                                                | Integrated |
-| beacon2                                                               | Pending    |
+| beacon2                                                               | Integrated |
 | developer                                                             | --         |
 | styleguide                                                            | --         |
 
