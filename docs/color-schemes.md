@@ -24,8 +24,6 @@ If you remove a core shade, or heck, a core color from the `.json` files, and pu
 - Version bumping the integration to the new `@helpscout/colorway` version
 - Building and releasing the updated integration
 
----
-
 ## Next
 
 Next, let's look into [creating a template](./templates.md).

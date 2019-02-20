@@ -44,8 +44,6 @@ generate({
 | dest    | `string` | The destination the file will be generated in your project. |
 | content | `string` | The final contents of the file.                             |
 
----
-
 ## Next
 
-Next, let's look into [generating a manifest](./manifest.md).
+Next, let's look into [generating a manifest](./manifests.md).

@@ -130,8 +130,6 @@ const palette = {
 export default palette
 ```
 
----
-
 ## Next
 
 Next, let's look into [integrating our App with Colorway](./integration.md).
