@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@helpscout/zero": "2.0.4",
+    "@helpscout/zero": "2.0.5",
     "fast-glob": "^2.2.6",
     "prettier": "^1.16.4"
   },
