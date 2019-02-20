@@ -42,16 +42,18 @@ exports.generate = async props => {
       dest,
     }
 
+    const formattedContent = formatContent(dest, content)
+
     const manifest = [
       JSON.stringify(meta, null, 2),
       manifestSepToken,
-      formatContent(dest, content),
+      formattedContent,
     ]
       .join('')
       .trim()
 
     writeFile(`../manifests/${name}`, manifest)
-    writeFile(`../dist/${name}/${dest}`, content)
+    writeFile(`../dist/${name}/${dest}`, formattedContent)
 
     console.log(`Generated ${name}`)
   } catch (err) {
