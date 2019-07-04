@@ -6,6 +6,12 @@ const inspect = obj => {
   console.log(util.inspect(obj, false, null, true))
 }
 
+const config = getColors()
+const colorConfig = {
+  ...config.previous,
+  blue: config.latest.blue,
+}
+
 const get = async () => {
   try {
     return readFile(here(`../data/colors.json`))
@@ -19,12 +25,11 @@ exports.find = async color => {
   prettyLog('Finding HSDS-React color')
 
   try {
-    const colors = getColors().hsdsConfig
     if (color.includes('.')) {
       const [group, shade] = color.split('.')
 
-      if (colors[group] && colors[group][shade]) {
-        console.log('   ', `${color}: ${colors[group][shade]}`)
+      if (colorConfig[group] && colorConfig[group][shade]) {
+        console.log('   ', `${color}: ${colorConfig[group][shade]}`)
         return
       }
     }
@@ -40,12 +45,6 @@ exports.closest = async color => {
   prettyLog(`Finding the closest HSDS-React color for "${color}"`)
 
   try {
-    const config = getColors()
-    const colorConfig = {
-      ...config.previous,
-      blue: config.latest.blue,
-    }
-
     // flatten colors
     const flattenColors = {}
     Object.keys(colorConfig).forEach(group => {
