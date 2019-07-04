@@ -1,6 +1,11 @@
 const fs = require('fs')
 const path = require('path')
 const mkdirp = require('mkdirp')
+const util = require('util')
+
+exports.inspect = obj => {
+  console.log(util.inspect(obj, false, null, true))
+}
 
 exports.here = dest => path.resolve(__dirname, dest)
 exports.there = dest => path.resolve(process.cwd(), dest)

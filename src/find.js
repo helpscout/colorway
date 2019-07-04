@@ -1,10 +1,5 @@
-const util = require('util')
 const { prettyLog, readFile, here } = require('./utils')
 const { getColors } = require('./configs')
-
-const inspect = obj => {
-  console.log(util.inspect(obj, false, null, true))
-}
 
 const config = getColors()
 const colorConfig = {
