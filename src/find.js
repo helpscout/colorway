@@ -7,14 +7,6 @@ const colorConfig = {
   blue: config.latest.blue,
 }
 
-const get = async () => {
-  try {
-    return readFile(here(`../data/colors.json`))
-  } catch (err) {
-    throw err
-  }
-}
-
 exports.find = async color => {
   if (!color) return
   prettyLog('Finding HSDS-React color')
