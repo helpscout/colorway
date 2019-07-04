@@ -12,6 +12,9 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [find & Closest](#find--closest)
+  - [Find](#find)
+  - [Closest](#closest)
 - [Documentation](#documentation)
 - [Integrations](#integrations)
 - [See Also](#see-also)
@@ -41,6 +44,30 @@ For a more automated/magical feed, we recommend you add this as a `prestart` or 
   "prestart": "colorway",
   ...
 }
+```
+
+## find & Closest
+
+Run the `colorway` command with `find` or `closest` as argument to:
+
+### Find
+
+Find will retrieve the HEX color code for a given color name. It will only use the HSDS-react manifest
+
+```
+colorway find blue.500
+
+// blue.500: #1292EE
+```
+
+### Closest
+
+Closest will find the color name from our palette that is the nearest from a given HEX code. It will only use the HSDS-react manifest
+
+```
+colorway closest #005500
+
+// green.900: #23633e
 ```
 
 ## Documentation
