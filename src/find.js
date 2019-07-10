@@ -45,7 +45,7 @@ exports.closest = async color => {
 
     const nearestColor = require('nearest-color').from(flattenColors)
 
-    const nearest = nearestColor(color)
+    const nearest = nearestColor(color.replace('#', ''))
 
     console.log('   ', `${nearest.name}: ${nearest.value}`)
   } catch (err) {
