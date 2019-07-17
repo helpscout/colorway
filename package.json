@@ -28,8 +28,6 @@
   "license": "MIT",
   "devDependencies": {
     "@helpscout/zero": "2.0.5",
-    "fast-glob": "^2.2.6",
-    "nearest-color": "^0.4.4",
     "prettier": "^1.16.4"
   },
   "publishConfig": {
@@ -37,6 +35,8 @@
   },
   "dependencies": {
     "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "nearest-color": "^0.4.4",
+    "fast-glob": "^2.2.6"
   }
 }
