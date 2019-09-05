@@ -46,7 +46,7 @@ $seed-color-scheme-helpscout: (
     800: #a5b2bd,
     default: #d5dce1,
   ),
-  gold: (
+  yellow: (
     100: #fff9ef,
     200: #fff2d7,
     300: #ffe7b8,
@@ -117,6 +117,18 @@ $seed-color-scheme-helpscout: (
     800: #304f8b,
     900: #142f5e,
     default: #8aabf1,
+  ),
+  gold: (
+    100: #fff9ef,
+    200: #fff2d7,
+    300: #ffe7b8,
+    400: #fdd88e,
+    500: #ffc555,
+    600: #fab347,
+    700: #e89635,
+    800: #ce7129,
+    900: #b24319,
+    default: #ffc555,
   ),
   text: (
     default: #2b2b2b,
