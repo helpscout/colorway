@@ -5,7 +5,8 @@ const { latest } = config
 
 const generateColorScheme = () => {
   let output = ''
-
+  latest['gold'] = latest['yellow']
+  delete latest['yellow']
   Object.keys(latest).forEach(color => {
     const shades = latest[color]
     output += `
