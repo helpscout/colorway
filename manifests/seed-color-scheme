@@ -62,6 +62,18 @@
         800: #a5b2bd,
         default: #d5dce1,
       ),
+      yellow: (
+        100: #fff9ef,
+        200: #fff2d7,
+        300: #ffe7b8,
+        400: #fdd88e,
+        500: #ffc555,
+        600: #fab347,
+        700: #e89635,
+        800: #ce7129,
+        900: #b24319,
+        default: #ffc555,
+      ),
       green: (
         100: #f5fff9,
         200: #e3fbee,
