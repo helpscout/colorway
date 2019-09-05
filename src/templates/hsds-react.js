@@ -5,6 +5,7 @@ const { warning } = require('./shared/warning')
 const colorConfig = {
   ...config.previous,
   blue: config.latest.blue,
+  yellow: config.latest.yellow,
 }
 
 const content = `
