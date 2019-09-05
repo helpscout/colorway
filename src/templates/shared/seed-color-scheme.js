@@ -22,6 +22,22 @@ ${warning}
       900: ${latest.blue['900']},
     ),
 ));
+
+@include _color((
+  yellow:
+    (
+      default: ${latest.yellow.default},
+      100: ${latest.yellow['100']},
+      200: ${latest.yellow['200']},
+      300: ${latest.yellow['300']},
+      400: ${latest.yellow['400']},
+      500: ${latest.yellow['500']},
+      600: ${latest.yellow['600']},
+      700: ${latest.yellow['700']},
+      800: ${latest.yellow['800']},
+      900: ${latest.yellow['900']},
+    ),
+));
 `.trim()
 
 exports.content = content
