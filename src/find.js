@@ -1,12 +1,5 @@
 const { prettyLog, readFile, here } = require('./utils')
-const { getColors } = require('./configs')
-
-const config = getColors()
-const colorConfig = {
-  ...config.previous,
-  blue: config.latest.blue,
-  yellow: config.latest.yellow,
-}
+const { colorConfig } = require('./templates/shared/hsds-react-config')
 
 exports.find = async color => {
   if (!color) return

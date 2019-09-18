@@ -1,14 +1,6 @@
 const { generate } = require('../generate')
-const config = require('../configs').getColors()
 const { warning } = require('./shared/warning')
-
-const colorConfig = {
-  ...config.previous,
-  blue: config.latest.blue,
-  indigo: config.latest.indigo,
-  whaletail: config.latest.whaletail,
-  yellow: config.latest.yellow,
-}
+const { colorConfig } = require('./shared/hsds-react-config')
 
 const content = `
 ${warning}
