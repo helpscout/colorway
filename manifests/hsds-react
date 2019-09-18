@@ -116,18 +116,6 @@ const palette = {
     '900': '#071E57',
     default: '#527CEB',
   },
-  lavender: {
-    '100': '#F9F9FF',
-    '200': '#EBECFF',
-    '300': '#D9DCFD',
-    '400': '#B9BEFF',
-    '500': '#9FA6FF',
-    '600': '#818AEC',
-    '700': '#6269C5',
-    '800': '#404996',
-    '900': '#232A5C',
-    default: '#9FA6FF',
-  },
   whaletail: {
     '100': '#F3F7FF',
     '200': '#E5EDFE',

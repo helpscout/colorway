@@ -6,7 +6,6 @@ const colorConfig = {
   ...config.previous,
   blue: config.latest.blue,
   indigo: config.latest.indigo,
-  lavender: config.latest.lavender,
   whaletail: config.latest.whaletail,
   yellow: config.latest.yellow,
 }
