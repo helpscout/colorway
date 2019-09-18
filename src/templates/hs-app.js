@@ -4,7 +4,15 @@ const { previous, latest } = config
 
 const generateLatestColorScheme = () => {
   let output = ''
-  const targets = ['blue', 'yellow', 'indigo']
+  const targets = [
+    'ash',
+    'blue',
+    'indigo',
+    'lavender',
+    'pink',
+    'whaletail',
+    'yellow',
+  ]
 
   Object.keys(latest).forEach(color => {
     if (targets.includes(color)) {
