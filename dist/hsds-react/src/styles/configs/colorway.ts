@@ -132,18 +132,6 @@ const palette = {
     '900': '#232A5C',
     default: '#9FA6FF',
   },
-  pink: {
-    '100': '#FFF9FB',
-    '200': '#FFEEF1',
-    '300': '#FFE1E7',
-    '400': '#FFCCD7',
-    '500': '#FFB3C3',
-    '600': '#FD9AAE',
-    '700': '#FD9AAE',
-    '800': '#FC5D7D',
-    '900': '#F23459',
-    default: '#FFB3C3',
-  },
   whaletail: {
     '100': '#F3F7FF',
     '200': '#E5EDFE',

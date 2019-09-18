@@ -8,7 +8,6 @@ const colorConfig = {
   blue: config.latest.blue,
   indigo: config.latest.indigo,
   lavender: config.latest.lavender,
-  pink: config.latest.pink,
   whaletail: config.latest.whaletail,
   yellow: config.latest.yellow,
 }
