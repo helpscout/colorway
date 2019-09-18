@@ -6,6 +6,7 @@ const colorConfig = {
   ...config.previous,
   blue: config.latest.blue,
   yellow: config.latest.yellow,
+  indigo: config.latest.indigo,
 }
 
 const content = `
