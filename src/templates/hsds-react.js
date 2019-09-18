@@ -4,7 +4,6 @@ const { warning } = require('./shared/warning')
 
 const colorConfig = {
   ...config.previous,
-  ash: config.latest.ash,
   blue: config.latest.blue,
   indigo: config.latest.indigo,
   lavender: config.latest.lavender,

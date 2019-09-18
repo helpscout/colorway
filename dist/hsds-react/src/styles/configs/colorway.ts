@@ -98,16 +98,6 @@ const palette = {
     '900': '#813c00',
     default: '#ff9139',
   },
-  ash: {
-    '200': '#F9FAFA',
-    '300': '#F1F3F5',
-    '400': '#E5E9EC',
-    '500': '#D5DCE1',
-    '600': '#A5B2BD',
-    '700': '#B7C2CC',
-    '800': '#A5B2BD',
-    default: '#D5DCE1',
-  },
   indigo: {
     '100': '#F2F6FF',
     '200': '#DFE7FF',
