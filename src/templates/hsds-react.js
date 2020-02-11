@@ -12,6 +12,6 @@ export default palette
 
 generate({
   name: 'hsds-react',
-  dest: 'src/styles/configs/colorway.ts',
+  dest: 'src/styles/configs/colorway.js',
   content,
 })
