@@ -5,5 +5,6 @@ exports.colorConfig = {
   blue: config.latest.blue,
   indigo: config.latest.indigo,
   whaletail: config.latest.whaletail,
+  lavender: config.latest.lavender,
   yellow: config.latest.yellow,
 }
