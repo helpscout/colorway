@@ -5,7 +5,15 @@ const { warning } = require('./shared/warning')
 
 const generateLatestColorScheme = () => {
   let output = ''
-  const targets = ['blue', 'yellow']
+  const targets = [
+    'blue',
+    'charcoal',
+    'grey',
+    'indigo',
+    'lavender',
+    'whaletail',
+    'yellow',
+  ]
 
   Object.keys(latest).forEach(color => {
     if (targets.includes(color)) {
