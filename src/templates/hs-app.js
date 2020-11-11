@@ -1,6 +1,7 @@
 const { generate } = require('../generate')
 const config = require('../configs').getColors()
 const { previous, latest } = config
+const { warning } = require('./shared/warning')
 
 const generateLatestColorScheme = () => {
   let output = ''
@@ -47,10 +48,7 @@ const generatePreviousColorScheme = () => {
 }
 
 const content = `
-// This file was automatically generated with @helpscout/colorway
-// Please don't modify this file. Your changes will be overwritten.
-// Instead, update the template at:
-// https://github.com/helpscout/colorway
+${warning}
 
 $seed-color-scheme-helpscout: (
   white: #fff,

@@ -1,11 +1,12 @@
 const { generate } = require('../generate')
 const config = require('../configs').getColors()
-const { latest } = config
+const { previous, latest } = config
 const { warning } = require('./shared/warning')
 
 const generateLatestColorScheme = () => {
   let output = ''
   const targets = [
+    'ash',
     'blue',
     'charcoal',
     'grey',
@@ -28,25 +29,53 @@ const generateLatestColorScheme = () => {
 
   return output
 }
+const generatePreviousColorScheme = () => {
+  let output = ''
+  const targets = ['green', 'red', 'purple', 'orange']
+
+  Object.keys(previous).forEach(color => {
+    if (targets.includes(color)) {
+      const shades = previous[color]
+      output += `
+        ${color}: (
+          ${JSON.stringify(shades, null, 2).replace(/{|}|"/g, '')}
+        ),
+      `
+    }
+  })
+
+  return output
+}
 
 const content = `
 ${warning}
 
-@import "pack/seed-color-scheme/__index";
+$seed-color-scheme-helpscout: (
+  white: #fff,
+  black: #000,
 
-@include _color((
   ${generateLatestColorScheme()}
-));
+  ${generatePreviousColorScheme()}
 
-@include _color((
-  link: (
-    default: _color(blue, 600),
-    base: _color(blue, 600),
-    hover: _color(blue, 500),
-    active: _color(blue, 500),
-    focus: _color(blue, 500),
+  text: (
+    default: #2b2b2b
   ),
-), default);
+
+  button: (
+    border: #d5d5d5,
+    hover: #e6e6e6,
+    active: #b6b6b6
+  ),
+
+  link: (
+    default: #0077CC,
+    base: #0077CC,
+    hover: #1292EE,
+    active: #1292EE,
+    focus: #1292EE
+  )
+);
+
 `.trim()
 
 generate({
