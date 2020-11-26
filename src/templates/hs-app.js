@@ -33,7 +33,7 @@ const generateLatestColorScheme = () => {
 }
 const generatePreviousColorScheme = () => {
   let output = ''
-  const targets = ['green', 'red', 'purple', 'orange']
+  const targets = ['red', 'purple', 'orange']
 
   Object.keys(previous).forEach(color => {
     if (targets.includes(color)) {
