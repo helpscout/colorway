@@ -128,18 +128,6 @@ $seed-color-scheme-helpscout: (
     900: #142f5e,
     default: #8aabf1,
   ),
-  green: (
-    100: #fafdfb,
-    200: #e4fbe6,
-    300: #c4f0ce,
-    400: #81dc9e,
-    500: #4bc27d,
-    600: #3cb170,
-    700: #2f9f62,
-    800: #228350,
-    900: #23633e,
-    default: #4bc27d,
-  ),
   red: (
     100: #fef7f6,
     200: #ffe3e2,
