@@ -9,9 +9,11 @@ const generateLatestColorScheme = () => {
     'ash',
     'blue',
     'charcoal',
+    'green',
     'grey',
     'indigo',
     'lavender',
+    'pink',
     'whaletail',
     'yellow',
   ]
