@@ -1,6 +1,6 @@
 {
   "name": "@helpscout/colorway",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "A color management syncing system",
   "main": "src/index.js",
   "bin": {
