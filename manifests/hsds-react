@@ -1,10 +1,10 @@
 {
-  "colorway": "v0.9.7",
+  "colorway": "v0.10.0",
   "name": "hsds-react",
   "dest": "src/styles/configs/colorway.js"
 }
 ==COLORWAY-MANIFEST==================
-// Generated with @helpscout/colorway (v0.9.7)
+// Generated with @helpscout/colorway (v0.10.0)
 //
 // This file was automatically generated with @helpscout/colorway
 // Please don't modify this file. Your changes will be overwritten.
